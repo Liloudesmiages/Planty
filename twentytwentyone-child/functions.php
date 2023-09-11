@@ -33,3 +33,18 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
 	}
 	add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
 }
+
+
+
+// Hook : ajouter menu admin
+function ajouter_menu_admin( $items, $args ) {
+    // si l'utilisateur est connecté et si je suis sur le menu header
+    if ( is_user_logged_in() && $args->theme_location == 'header' ) {
+        // Ajoutez menu "Admin"
+        $items .= '<li class="adminmenu"><a href="' . admin_url() . '">Admin</a></li>';
+    }
+    return $items;
+}
+
+// Ajoutez le filtre pour le hook wp_nav_menu_items
+add_filter( 'wp_nav_menu_items', 'ajouter_menu_admin', 10, 2 );
