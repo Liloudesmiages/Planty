@@ -108,6 +108,7 @@ header .logo {
 }
 .boutonplusmoins {
   display: flex;
+  width:31px
 }
 body {
   background-color: #3B8E46;
@@ -160,7 +161,6 @@ body {
   background:none;
   border: 0;
   height: 50%;
-  padding:0 10px
 }
 ​
 .separator {
@@ -190,7 +190,8 @@ body {
 }
 ​
 .ligne {
-  width: 1px;
+  width: 2px;
+  height: 100%;
   background-color: white;
   margin: 20px 30px 25px 30px;
 }

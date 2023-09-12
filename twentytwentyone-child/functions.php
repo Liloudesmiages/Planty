@@ -48,3 +48,7 @@ function ajouter_menu_admin( $items, $args ) {
 
 // Ajoutez le filtre pour le hook wp_nav_menu_items
 add_filter( 'wp_nav_menu_items', 'ajouter_menu_admin', 10, 2 );
+
+
+// supression des P inutiles de Contact form 7
+add_filter('wpcf7_autop_or_not', '__return_false');

@@ -42,7 +42,7 @@ header .logo {
 }
 
 .menu-header-container, header nav ul {
-  height:100%
+  height:100%;
 }
 
 /*commander*/
@@ -87,6 +87,13 @@ header nav .commander {
 
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  }
+
+.container2 {
+  width: 100%;
   margin: 0 auto;
   max-width: 800px;
   align-items: center;
@@ -103,20 +110,24 @@ header nav .commander {
 .qteboutons {
   display: flex;
   gap: 10px;
+  height : 56 px;
 }
 
 .qte {
   display: flex;
   gap: 10px;
+  height: 56px;
 }
 .boutonplusmoins {
   display: flex;
-}
-body {
-  background-color: green;
+  height: 56px;
 }
 
-.ok {
+body {
+  background-color: #3B8E46;
+}
+
+.qteboutons .qte input.ok {
   font-family: Syne;
   font-size: 15px;
   font-weight: 400;
@@ -125,12 +136,10 @@ body {
   background: #e0b9b4;
   border: 0;
   width: 50%;
-  width: 100px;
-  height: 56px;
   border-radius: 5px;
 }
 
-.number {
+.qteboutons .qte input.number {
   font-family: Inter;
   border: 0;
   font-size: 16px;
@@ -145,9 +154,10 @@ body {
   border-bottom-left-radius: 5px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  padding: 0;
 }
 
-.plusmoins {
+.qteboutons .qte .plusmoins {
   font-family: Syne;
   font-size: 20px;
   font-weight: 400;
@@ -157,16 +167,21 @@ body {
   background: #e0b9b4;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 56px;
 }
 
-.plus, .moins  {
-  background:none;
+.boutonplusmoins {
+  height: 56px;
+}
+
+.qteboutons .qte .plus, .qteboutons .qte .moins  {
+  background:#e0b9b4!important;
   border: 0;
   height: 50%;
-  padding:0 10px
+  padding:0 10px;
 }
 
-.separator {
+.qteboutons .qte .separator {
   width: 100%;
   height: 1px;
   background-color: white;
@@ -193,10 +208,11 @@ body {
 }
 
 .ligne {
-  width: 1px;
+  width: 2px;
+  height: 100%;
   background-color: white;
   margin: 20px 30px 25px 30px;
-}
+ }
 
 .livraison {
   width: 50%;
@@ -224,7 +240,7 @@ body {
   */
 
 /*footer pb avec le point list style ne fo pas*/
-#menu-item-331 a {
+.menu-footer2-container a {
   display: flex;
   justify-content: center;
   align-items: center;
