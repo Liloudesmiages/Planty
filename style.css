@@ -1,0 +1,338 @@
+/*
+Theme Name: Planty
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Template: twentytwentyone
+Author: Lilou
+Author URI: https://wordpress.org/
+Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Tags: one-column,accessibility-ready,custom-colors,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,block-patterns,rtl-language-support,sticky-post,threaded-comments,translation-ready
+Version: 1.8.1692944804
+Updated: 2023-08-25 08:26:44
+
+*/
+
+/* HEADER  */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+ }
+
+
+
+
+/*
+nav ul li {
+  height: 80px;
+}
+*/
+
+header .logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 225px;
+  height: 40px;
+  margin: 20px 20px;
+  margin-left: 20px;
+}
+
+.menu-header-container, header nav ul {
+  height:100%;
+}
+
+/*commander*/
+header nav .commander a {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  justify-content: space-around;
+  align-items: center;
+  background: #dc9f96;
+  padding: 40px 50px;
+}
+
+/*nous rencontrer*/
+header nav ul li a {
+  font-family: Syne;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 34px 50px 32px 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+header nav ul li {
+  order:0;
+}
+header nav ul .adminmenu {
+  order:1;
+}
+
+header nav .commander {
+  order:99;
+}
+
+/*formulaire*/
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  }
+
+.container2 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  align-items: center;
+}
+
+.separation {
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background-color: white;
+  margin: 60px auto;
+}
+
+.qteboutons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.qte {
+  display: flex;
+  gap: 10px;
+  width: 25%;
+}
+.boutonplusmoins {
+  display: flex;
+  height: 56px;
+}
+
+body {
+  background-color: #3B8E46;
+}
+
+.qteboutons .qte input.ok {
+  font-family: Syne;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background: #e0b9b4;
+  border: 0;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px 26px;
+}
+
+.qteboutons .qte input.number {
+  font-family: Inter;
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0;
+  margin: 0;
+  max-width: 41px;
+  height: 100%;
+}
+
+.qteboutons .qte .plusmoins {
+  font-family: Syne;
+  font-size: 20px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background: #d59a93;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boutonplusmoins {
+  height: 56px;
+}
+
+.qteboutons .qte .plus, .qteboutons .qte .moins  {
+  background:#d59a93!important;
+  color: #ffffff;
+  border: 0;
+  height: 50%;
+  padding:0 10px;
+}
+
+.qteboutons .qte .moins  {
+  height: calc(50% - 1px);
+}
+
+.qteboutons .qte .separator {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+/*formulaire*/
+
+.formulaire {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.formulaire h3 {
+  font-family: Syne;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.vosinformations {
+  width: 50%;
+  padding: 20px 30px;
+  font-family: Syne;
+  border-right:1px solid white ;
+}
+
+
+
+.livraison {
+  width: 50%;
+  padding: 20px 30px;
+  padding-bottom: 2em;
+}
+
+.monbouton {
+  text-align: center;
+  color: #e0b9b4;
+  margin-bottom: 80px;
+  font-family: Syne;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+}
+/*
+ footer2 a {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 60px;
+  width : 100%;
+  }
+  */
+
+/*footer pb avec le point list style ne fo pas*/
+.menu-footer2-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Syne;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+}
+
+.wpforms-submit-container{
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.t-mob {
+  display: none;
+}
+
+.boutonetok {
+  display: flex;
+  gap: 10px;
+}
+
+/* En dessous de 767px */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  .formulaire {
+    flex-direction: column;
+  }
+
+  header .logo {
+    width: 197px;
+    height: 35px;
+  }
+
+  header nav ul li a {
+    padding: 18px 7px;
+  }
+
+  header nav .commander a {
+    font-size: 13px;
+    padding: 18px 7px;
+  }
+
+  .qteboutons {
+    flex-wrap: wrap;
+    }
+  .qte {
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .boutonetok {
+    display: flex;
+  }
+
+  .t-mob {
+    font-size: 12px;
+    display: block
+  }
+  
+}
