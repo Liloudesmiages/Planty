@@ -19,12 +19,16 @@ header {
   overflow: hidden;
 }
 
+
 nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
  }
+
+
+
 
 /*
 nav ul li {
@@ -85,8 +89,13 @@ header nav .commander {
 
 /*formulaire*/
 
+
+
+
 .container {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap; 
@@ -110,13 +119,13 @@ header nav .commander {
 .qteboutons {
   display: flex;
   gap: 10px;
-  height : 56 px;
+  width: 100%;
 }
 
 .qte {
   display: flex;
   gap: 10px;
-  height: 56px;
+  width: 25%;
 }
 .boutonplusmoins {
   display: flex;
@@ -137,6 +146,7 @@ body {
   border: 0;
   width: 50%;
   border-radius: 5px;
+  padding: 10px 26px;
 }
 
 .qteboutons .qte input.number {
@@ -147,7 +157,6 @@ body {
   text-align: center;
   color: #000000;
   background: #ffffff;
-  max-width: 51px;
   justify-content: center;
   align-items: center;
   border-top-left-radius: 5px;
@@ -155,6 +164,9 @@ body {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 0;
+  margin: 0;
+  max-width: 41px;
+  height: 100%;
 }
 
 .qteboutons .qte .plusmoins {
@@ -164,10 +176,12 @@ body {
   justify-content: center;
   text-align: center;
   color: #ffffff;
-  background: #e0b9b4;
+  background: #d59a93;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 56px;
+  display: flex;
+  flex-direction: column;
 }
 
 .boutonplusmoins {
@@ -175,10 +189,15 @@ body {
 }
 
 .qteboutons .qte .plus, .qteboutons .qte .moins  {
-  background:#e0b9b4!important;
+  background:#d59a93!important;
+  color: #ffffff;
   border: 0;
   height: 50%;
   padding:0 10px;
+}
+
+.qteboutons .qte .moins  {
+  height: calc(50% - 1px);
 }
 
 .qteboutons .qte .separator {
@@ -195,27 +214,25 @@ body {
   padding-bottom: 30px;
 }
 
-.formulaire .h3 {
+.formulaire h3 {
   font-family: Syne;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  padding: 60px 60px;
 }
 
 .vosinformations {
   width: 50%;
+  padding: 20px 30px;
+  font-family: Syne;
+  border-right:1px solid white ;
 }
 
-.ligne {
-  width: 2px;
-  height: 100%;
-  background-color: white;
-  margin: 20px 30px 25px 30px;
- }
+
 
 .livraison {
   width: 50%;
+  padding: 20px 30px;
   padding-bottom: 2em;
 }
 
@@ -229,17 +246,27 @@ body {
   line-height: 37px;
   letter-spacing: 0em;
 }
-/*
- footer2 a {
-  display: flex;
-  align-items: center;
-  background-color: #FFFFFF;
-  height: 60px;
-  width : 100%;
-  }
-  */
 
-/*footer pb avec le point list style ne fo pas*/
+.wpforms-submit-container{
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.t-mob {
+  display: none;
+}
+
+.boutonetok {
+  display: flex;
+  gap: 10px;
+}
+
+/*footer*/
 .menu-footer2-container a {
   display: flex;
   justify-content: center;
@@ -255,6 +282,45 @@ body {
   width: 100%;
 }
 
-.wpforms-submit-container{
-  text-align: center;
+/* En dessous de 767px */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  .formulaire {
+    flex-direction: column;
+  }
+
+  header .logo {
+    width: 197px;
+    height: 35px;
+  }
+
+  header nav ul li a {
+    padding: 18px 7px;
+  }
+
+  header nav .commander a {
+    font-size: 13px;
+    padding: 18px 7px;
+  }
+
+  .qteboutons {
+    flex-wrap: wrap;
+    }
+  .qte {
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .boutonetok {
+    display: flex;
+  }
+
+  .t-mob {
+    font-size: 12px;
+    display: block
+  }
+  
 }
